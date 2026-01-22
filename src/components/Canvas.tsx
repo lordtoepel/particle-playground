@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { Particle, ParticleMode, MousePosition } from '../types/particles';
+import type { Particle, ParticleMode, MousePosition } from '../types/particles';
 import {
   createParticle,
   updateGravityParticle,
@@ -18,7 +18,7 @@ export const Canvas = ({ mode }: CanvasProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const mouseRef = useRef<MousePosition>({ x: 0, y: 0 });
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number>(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;

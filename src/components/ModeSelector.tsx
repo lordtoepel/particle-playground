@@ -1,4 +1,4 @@
-import { ParticleMode } from '../types/particles';
+import type { ParticleMode } from '../types/particles';
 
 interface ModeSelectorProps {
   currentMode: ParticleMode;

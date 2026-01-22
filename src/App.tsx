@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Canvas } from './components/Canvas';
 import { ModeSelector } from './components/ModeSelector';
-import { ParticleMode } from './types/particles';
+import type { ParticleMode } from './types/particles';
 
 function App() {
   const [mode, setMode] = useState<ParticleMode>('gravity');

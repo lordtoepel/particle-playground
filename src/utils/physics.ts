@@ -1,4 +1,4 @@
-import { Particle, MousePosition } from '../types/particles';
+import type { Particle, MousePosition } from '../types/particles';
 
 export const createParticle = (
   x: number,
